@@ -12,11 +12,6 @@ background: linear-gradient(333deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 95%);
     border: none;
 }
 
-.navbar img {
-    box-shadow: inset 10px 5px 50px  rgba(146, 12, 255, 0.5);
-    border-radius: 100px;
-}
-
 .footer a {
     color: rgba(146, 12, 255, 0.9);
 }

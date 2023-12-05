@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import logo from "../../img/logo.png";
+import logo from "../../img/logo1.png";
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 
@@ -13,7 +13,7 @@ export const Navbar = () => {
 			<Link className="navbar-brand" to="/">
 
 				<p className=" m-1">
-					<img src={logo} style={{ height: "100px", width: "100px" }} />
+					<img src={logo} style={{ height: "100px", width: "180px" }} />
 				</p>
 
 			</Link>
