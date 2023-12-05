@@ -3,10 +3,10 @@ import React from "react";
 
 
 
-function Card3({ data, data2 }) {
+export const Card3 = ({ data, data2 }) =>{
 
     return (
-        <div className="card mb-3 d-flex justify-content-center w-100" style={{ minWidth: "1000px" }}>
+        <div className="card card-style1 mb-3 d-flex justify-content-center w-100" style={{ minWidth: "1000px" }}>
             <div className="row p-5">
                 <div className="col-md-4 ">
                     <img src={`https://starwars-visualguide.com/assets/img/characters/${data2.uid}.jpg`} className="card-img-top" style={{ width: "300px", height: "400px" }} alt="..."></img>
@@ -19,36 +19,34 @@ function Card3({ data, data2 }) {
                     </div>
                 </div>
             </div>
-            <div className=" w-100 " style={{ borderTop: "2px solid red" }}>
+            <div className=" w-100 card-style-barder">
                 <div className="row mt-3 text-center d-flex justify-content-around m-0 p-0" style={{ fontSize: "20px" }}>
                     <div className="col-2">
-                        <h5 className="text-danger "> Name</h5>
-                        <p className="text-danger ">{data.name}</p>
+                        <h5 className="text-style1 "> Name</h5>
+                        <p className="text-style1 ">{data.name}</p>
                     </div >
                     <div className="col-md-2">
-                        <h5 className="text-danger ">birth Year</h5>
-                        <p className="text-danger ">{data.birth_year}</p>
+                        <h5 className="text-style1 ">birth Year</h5>
+                        <p className="text-style1 ">{data.birth_year}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Gender</h5>
-                        <p className="text-danger ">{data.gender}</p>
+                        <h5 className="text-style1 ">Gender</h5>
+                        <p className="text-style1 ">{data.gender}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Height</h5>
-                        <p className="text-danger ">{data.height}</p>
+                        <h5 className="text-style1 ">Height</h5>
+                        <p className="text-style1 ">{data.height}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Skin Color</h5>
-                        <p className="text-danger ">{data.skin_color}</p>
+                        <h5 className="text-style1 ">Skin Color</h5>
+                        <p className="text-style1 ">{data.skin_color}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Eye Color</h5>
-                        <p className="text-danger ">{data.eye_color}</p>
+                        <h5 className="text-style1 ">Eye Color</h5>
+                        <p className="text-style1 ">{data.eye_color}</p>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
-
-export default Card3;
+    );
+};

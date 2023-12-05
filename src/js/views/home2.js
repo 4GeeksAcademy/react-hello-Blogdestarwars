@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../../styles/home.css";
-import { Card3 } from "../component/Card3.js"
+import { Card3 } from "../component/card3.js"
 import { useParams } from "react-router";
 import { Context } from "../store/appContext";
 
@@ -31,7 +31,7 @@ export const Home2 = (props) => {
     return (
         <div>
 
-            <div className="d-flex m-1">
+            <div className="d-flex m-1 ">
                 <Card3 data2={data ? data : {}} data={data ? data.properties : {}} />
 
             </div>

@@ -3,11 +3,12 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
 
-function Card2({ data3 }) {
+
+export const Card2 = ({ data3 }) => {
     const navigate = useNavigate()
     const { store, actions } = useContext(Context)
     return (
-        <div className="card" style={{ minWidth: "18rem" }}>
+        <div className="card card-style my-4" style={{ minWidth: "15rem" }}>
             <div>
                 <img src={`https://starwars-visualguide.com/assets/img/planets/${data3.uid}.jpg`}
 
@@ -19,12 +20,12 @@ function Card2({ data3 }) {
                 <h5 className="card-title  m-1 p-1">{data3.properties.name}</h5>
                 <p className="card-text m-1 p-1">Population:{data3.properties.population}</p>
                 <p className="card-text  m-1 p-1">Terrain:{data3.properties.terrain}</p>
-                <div className="d-flex ">
-                    <button className="btn border border-primary lernmore" onClick={() => {
+                <div className="d-flex  justify-content-between m-1">
+                    <button className="btn lernmore" onClick={() => {
                         navigate("/planets/" + data3.uid)
                     }} >Learn More!</button>
 
-                    <button className={`border border-warning m-1 fa-heart heart ${actions.boton(data3.properties.name) ? "fa-solid" : "fa-regular"}`}
+                    <button className={` m-1 p-2 fa-heart heart ${actions.boton(data3.properties.name) ? "fa-solid" : "fa-regular"}`}
                     onClick={() => { actions.agregado(data3.properties.name) }}
                     >  </button>
                     {/* <button className={`border border-warning m-1 fa-heart  heart ${actions.boton(data.properties.name) ? "fa-solid" : "fa-regular"}`}
@@ -34,7 +35,6 @@ function Card2({ data3 }) {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Card2;

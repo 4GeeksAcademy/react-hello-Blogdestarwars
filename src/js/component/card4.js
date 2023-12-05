@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-function Card4({ data, data2 }) {
+export const Card4 = ({ data, data2 }) => {
 
     return (
         <div className="card mb-3 d-flex justify-content-center w-100" style={{ minWidth: "1000px" }}>
@@ -50,7 +50,5 @@ function Card4({ data, data2 }) {
                 </div>
             </div>
         </div>
-    )
-}
-
-export default Card4;
+    );
+};

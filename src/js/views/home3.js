@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../../styles/home.css";
-import { Card4 from } "../component/Card4.js"
+import  { Card4 } from "../component/card4.js";
 import { useParams } from "react-router";
 import { Context } from "../store/appContext";
 

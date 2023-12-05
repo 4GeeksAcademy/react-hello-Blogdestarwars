@@ -9,7 +9,7 @@ export const Navbar = () => {
 
 
 	return (
-		<nav className="navbar navbar-light bg-white mb-3">
+		<nav className="navbar navbar-dark mb-3 px-5">
 			<Link className="navbar-brand" to="/">
 
 				<p className=" m-1">
@@ -19,7 +19,7 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto">
 				<div className="dropdown">
-					<button className="btn btn-primary dropdown-toggle d-flex  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<button className="btn dropdown-toggle d-flex  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Favorites <div className="bg-danger px-1 mx-1 rounded d-flex justify-content-center">{store.contador}</div>
 					</button>
 
