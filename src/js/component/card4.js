@@ -6,7 +6,7 @@ import React from "react";
 export const Card4 = ({ data, data2 }) => {
 
     return (
-        <div className="card mb-3 d-flex justify-content-center w-100" style={{ minWidth: "1000px" }}>
+        <div className="card card-style1 mb-3 d-flex justify-content-center w-100" style={{ minWidth: "1000px" }}>
             <div className="row p-5">
                 <div className="col-md-5">
                     <img src={`https://starwars-visualguide.com/assets/img/planets/${data2.uid}.jpg`} className="card-img-top" style={{ width: "400px", height: "400px" }} alt="..."
@@ -21,31 +21,31 @@ export const Card4 = ({ data, data2 }) => {
                     </div>
                 </div>
             </div>
-            <div className=" w-100 " style={{ borderTop: "2px solid red" }}>
+            <div className=" w-100 card-style-barder">
                 <div className="row mt-3 text-center d-flex justify-content-around m-0 p-0" style={{ fontSize: "20px" }}>
                     <div className="col-2">
-                        <h5 className="text-danger "> Name</h5>
-                        <p className="text-danger ">{ data.name}</p>
+                        <h5 className="text-style1 "> Name</h5>
+                        <p className="text-style1 ">{ data.name}</p>
                     </div >
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Climate</h5>
-                        <p className="text-danger ">{data.climate}</p>
+                        <h5 className="text-style1 ">Climate</h5>
+                        <p className="text-style1 ">{data.climate}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Population</h5>
-                        <p className="text-danger ">{ data.population}</p>
+                        <h5 className="text-style1 ">Population</h5>
+                        <p className="text-style1 ">{ data.population}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Orbital Period</h5>
-                        <p className="text-danger ">{ data.orbital_period}</p>
+                        <h5 className="text-style1 ">Orbital Period</h5>
+                        <p className="text-style1 ">{ data.orbital_period}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Rotation Period</h5>
-                        <p className="text-danger ">{data.rotation_period}</p>
+                        <h5 className="text-style1 ">Rotation Period</h5>
+                        <p className="text-style1 ">{data.rotation_period}</p>
                     </div>
                     <div className="col-md-2">
-                        <h5 className="text-danger ">Diameter</h5>
-                        <p className="text-danger ">{ data.diameter}</p>
+                        <h5 className="text-style1 ">Diameter</h5>
+                        <p className="text-style1 ">{ data.diameter}</p>
                     </div>
                 </div>
             </div>
